@@ -60,7 +60,12 @@
         <div class="four-down-picture">
           <img src="/images/6.png" alt="Картинка нижнего ряда">
         </div>
-        <div class="four-down-block-text">Текст нижнего ряда</div>
+        <div class="four-down-block-text">
+          <div class="four-down-1">Whether flying solo, grazing with friends or settling in for the evening, we’re certain we’ll be able to accomodate you. After all, hospitality is what we do.</div>
+          <div class="four-down-2">BOOK IN</div>
+          <div class="four-dowm-line"></div>
+          
+        </div>
       </div>
     </div>
 
@@ -288,26 +293,21 @@ main {
   justify-content: space-between;
   align-items: flex-start; /* Верхнее выравнивание */
   margin-top: 137px;
-  flex-wrap: wrap; /* Разрешаем перенос элементов */
-}
-
-.four-down {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap; /* Разрешаем перенос элементов */
+  flex-wrap: wrap;
+  
+  
 }
 
 /* Блок текста в верхнем ряду */
 .four-up-block-text {
-  width: 48%; /* Уменьшаем ширину блока для большего пространства */
+  width: 50%; /* Уменьшаем ширину блока для большего пространства */
   display: flex;
   flex-direction: column;
   align-items: flex-start; /* Выровнять текст по левому краю */
   text-align: left; /* Выравнивание текста по левому краю */
-  padding-left: 20px;
-  margin-bottom: 20px;
+  padding-left: 250px;
+
+  
 }
 
 /* Отдельные текстовые элементы */
@@ -320,25 +320,31 @@ main {
   font-weight: 400;
   font-size: 13px;
   letter-spacing: 2.08px;
-  margin-bottom: 10px;
 }
 
 .four-up-2 {
+  width: 500px;
+
   font-family: Roboto;
-  font-weight: 400;
-  font-size: 59px;
-  line-height: 63px;
-  letter-spacing: 1.8px;
-  margin-bottom: 20px;
+font-weight: 400;
+font-size: 59px;
+line-height: 63px;
+letter-spacing: 1.8px;
+
+  margin-top: 48px;
 }
 
 .four-up-3 {
+  width: 320px;
+
   font-family: Roboto;
   font-weight: 400;
   font-size: 16px;
   line-height: 22.4px;
   letter-spacing: 0.32px;
-  margin-bottom: 20px;
+
+
+  margin-top: 52px;
 }
 
 .four-up-4 {
@@ -346,7 +352,8 @@ main {
   font-weight: 400;
   font-size: 13px;
   letter-spacing: 2.08px;
-  margin-bottom: 6px;
+
+  margin-top: 34px;
 }
 
 /* Линия под текстом */
@@ -354,7 +361,7 @@ main {
   width: 123px;
   height: 1px;
   background: #0000004D;
-  margin-top: 20px;
+  margin-top: 5px;
 }
 
 /* Блоки с изображениями */
@@ -365,16 +372,67 @@ main {
   object-fit: cover;
 }
 
+.four-up-picture {
+  text-align: left;
+  padding-right: 250px;
+  align-self: flex-end;
+}
+
+
+
+
+.four-down {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Разрешаем перенос элементов */
+}
+
 /* Нижний блок текста (по центру) */
 .four-down-block-text {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
+  align-items: flex-start; /* Прижимает содержимое к левому краю */
+  text-align: left; /* Убирает центрирование текста */
   max-width: 404px;
-  margin-top: 20px;
+  margin-top: 154px;
+  margin-bottom: 181px;
+  margin-right: 250px; /* Если не нужно, уберите */
 }
 
+
+.four-down-1 {
+  width: 390px;
+  height: 203px;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 33.8px;
+  letter-spacing: 0.78px;
+  text-align: left;
+}
+
+.four-down-2 {
+  width: 70px;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 13px;
+  letter-spacing: 2.08px;
+  text-align: left;
+
+}
+.four-down-picture{
+  padding-left: 250px;
+}
+
+.four-dowm-line {
+  width: 70px;
+  height: 1px;
+  background: #0000004D;
+  margin-top: 5px;
+}
 
 .Five, .Six, .Seven, .Eight, .Nine {
   width: 100%;
